@@ -89,15 +89,21 @@ export default {
 .arrow-button {
     padding: 0 10px;
     font-size: 24px;
+    font-weight: normal;
 }
 
 button {
     text-transform: uppercase;
     font-size: 12px;
-    padding: 10px 30px;
     margin-right: 15px;
     background-color: white;
     border: none;
+}
+
+span {
+    line-height: 50px;
+    padding: 0 20px;
+    font-weight: bold;
 }
 
 button:hover {
