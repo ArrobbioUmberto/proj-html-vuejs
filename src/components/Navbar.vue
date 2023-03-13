@@ -12,14 +12,14 @@ export default {
             </div>
             <div class="col">
                 <ul class="nav_menu">
-                    <li><a href=""></a>homes</li>
-                    <li><a href=""></a>pages</li>
-                    <li><a href=""></a>blog</li>
-                    <li><a href=""></a>shop</li>
-                    <li><a href=""></a>events</li>
-                    <li><a href=""></a>elements</li>
-                    <li><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><a href=""></a><i class="fa-solid fa-list"></i></li>
+                    <li><a href=""> &rightarrow; homes</a></li>
+                    <li><a href="">pages</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="">events</a></li>
+                    <li><a href="">elements</a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-list"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -35,6 +35,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .row {
@@ -45,14 +46,22 @@ export default {
     padding: 30px 0;
 }
 
-li {
-    list-style-type: none;
+a {
+    text-decoration: none;
     text-transform: uppercase;
     margin: 5px 10px;
     font-weight: bold;
+    color: black;
+    padding: 10px 0;
 }
 
-li:hover {
+li {
+    list-style-type: none;
+    margin: 0 10px;
+
+}
+
+a:hover {
     color: orange;
     cursor: pointer;
 }
