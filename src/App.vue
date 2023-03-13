@@ -1,13 +1,24 @@
 <script>
+import Navbar from './components/Navbar.vue';
+export default {
+  components: {
+    Navbar
+  }
+}
 
 </script>
 
 <template>
-  <h1>ciao</h1>
+  <header>
+    <Navbar></Navbar>
+  </header>
 </template>
 
-<style scoped>
-h1 {
-  color: red;
+<style lang="scss" scoped>
+@use './style/general.scss';
+
+header {
+  background-image: url('/img/rev-slider-main-home-img-03.jpg');
+  height: 100vh;
 }
 </style>
