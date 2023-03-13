@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container header">
         <div class="row">
             <div class="col">
                 <img src="/img/logo-img-01.png" alt="logo">
@@ -18,8 +18,8 @@ export default {
                     <li><a href=""></a>shop</li>
                     <li><a href=""></a>events</li>
                     <li><a href=""></a>elements</li>
-                    <li><a href=""></a>i search</li>
-                    <li><a href=""></a>i menu</li>
+                    <li><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><a href=""></a><i class="fa-solid fa-list"></i></li>
                 </ul>
             </div>
         </div>
@@ -27,6 +27,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.header {
+    height: 100px;
+}
+
 .nav_menu {
     display: flex;
     flex-direction: row;
@@ -38,6 +42,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    padding: 30px 0;
 }
 
 li {
@@ -49,5 +54,6 @@ li {
 
 li:hover {
     color: orange;
+    cursor: pointer;
 }
 </style>
