@@ -55,6 +55,7 @@ export default {
 .paragraph {
     font-size: 3rem;
     display: flex;
+    pointer-events: none;
 }
 
 .description {
