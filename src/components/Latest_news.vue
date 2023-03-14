@@ -1,0 +1,199 @@
+<script>
+export default {
+    data() {
+        return {
+            Cardlist: [
+                {
+                    image: '/img/h1-blog-img-02.jpg',
+                    title: 'next investment',
+                    time_event: 'May 5, 2019',
+                    speaker: 'amanda doe',
+                    btn: 'read more',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae obcaecati nihil repudiandae....'
+                },
+                {
+                    image: '/img/h1-blog-img-03.jpg',
+                    title: 'team building',
+                    time_event: 'May 5, 2019',
+                    speaker: 'amanda doe',
+                    btn: 'read more',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae obcaecati nihil repudiandae....'
+                },
+                {
+                    image: '/img/h1-blog-img-04.jpg',
+                    title: 'new business day',
+                    time_event: 'May 5, 2019',
+                    speaker: 'amanda doe',
+                    btn: 'read more',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae obcaecati nihil repudiandae....'
+                }
+            ]
+        }
+    }
+}
+</script>
+<template>
+    <div class="container">
+        <img src="/svg/svg-4.svg" alt="" class="point-circle">
+        <div class=" row row-text">
+            <div class="pointer-title">
+                <h1>latest news</h1>
+                <span class="point">.</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <span class="line"></span>
+        </div>
+        <div class="row row-card">
+            <ul>
+                <li v-for="el in Cardlist" class="card">
+                    <div class="card-img">
+                        <img :src="el.image" alt="">
+                        <button class="btn-corner"><i class="fa-solid fa-tag"></i>business, leading</button>
+                    </div>
+                    <div class="event-info">
+                        <span class="date"> <i class="fa-regular fa-clock"></i> {{ el.time_event }}</span>
+                        <span class="speaker"><i class="fa-regular fa-user"></i> {{ el.speaker }}</span>
+                    </div>
+                    <h2>{{ el.title }}</h2>
+                    <p class="card-text">{{ el.text }}</p>
+                    <button class="btn">{{ el.btn }}</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</template>
+<style lang="scss" scoped>
+.container {
+    position: relative;
+    padding: 100px 0;
+}
+
+.row {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.row-text {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.point-circle {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.pointer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.point {
+    color: #ff4612;
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+p {
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.line {
+    border-bottom: 2px solid #ff4612;
+    display: inline-block;
+    width: 6%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 3);
+    position: relative;
+}
+
+.event-info {
+    padding-top: 40px;
+}
+
+.date,
+.speaker {
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+i {
+    color: #ff4612;
+}
+
+.btn-corner>i {
+    color: white;
+    padding: 0 3px;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.card-img>img {
+    width: 100%;
+    z-index: 1;
+}
+
+.btn-corner {
+    background-color: #ff4612;
+    width: max-content;
+    border: none;
+    text-transform: capitalize;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    right: 5%;
+    bottom: 40%;
+    padding: 1rem 1.5rem;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn {
+    width: fit-content;
+    border: none;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 15px 0;
+}
+</style>
