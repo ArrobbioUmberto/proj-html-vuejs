@@ -17,6 +17,11 @@ export default {
                 <span>linea </span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam rem consectetur incidunt,
                     provident vero vel? Excepturi, qui nemo.</p>
+                <div class="logo">
+                    <i class="fa-brands fa-linkedin-in custom-logo"></i>
+                    <i class="fa-brands fa-facebook-f custom-logo fb"></i>
+                    <i class="fa-brands fa-twitter custom-logo"></i>
+                </div>
             </div>
         </div>
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
@@ -49,6 +54,7 @@ export default {
     background-color: #ff4612;
     padding: 10px 20px;
     color: white;
+    margin-bottom: 4px;
 }
 
 .col-text {
@@ -64,11 +70,37 @@ export default {
 h2 {
     font-size: 35px;
     text-transform: capitalize;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 300;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    margin: 0;
 }
 
 .point-circle {
     position: absolute;
     top: 0;
     right: 0%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-logo {
+    background-color: #ff4612;
+    color: white;
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.fb {
+    padding: 5px 8px;
 }
 </style>
