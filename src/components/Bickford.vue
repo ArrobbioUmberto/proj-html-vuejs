@@ -14,7 +14,7 @@ export default {
             <div class="col-text">
                 <h2>jason bickford</h2>
                 <h3>Founder and Executive Director</h3>
-                <span>linea </span>
+                <span class="line"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam rem consectetur incidunt,
                     provident vero vel? Excepturi, qui nemo.</p>
                 <div class="logo">
@@ -65,6 +65,12 @@ export default {
     transform: translate(0%, -50%);
     padding: 80px 50px;
     z-index: 1;
+}
+
+.line {
+    border-bottom: 4px solid #ff4612;
+    display: inline-block;
+    width: 16%;
 }
 
 h2 {
