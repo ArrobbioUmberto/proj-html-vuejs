@@ -6,6 +6,7 @@ import Bickford from './components/Bickford.vue';
 import Upcoming from './components/Upcoming.vue';
 import Leader from './components/Leader.vue';
 import Latest_news from './components/Latest_news.vue';
+import Testimonials from './components/Testimonials.vue';
 
 export default {
   components: {
@@ -15,7 +16,8 @@ export default {
     Bickford,
     Upcoming,
     Leader,
-    Latest_news
+    Latest_news,
+    Testimonials
   }
 }
 
@@ -41,7 +43,7 @@ export default {
       <Latest_news></Latest_news>
     </section>
     <section class="testimonials">
-      <!-- bg nero con titolo in 'trasparenza' e sempre frecce e -->
+      <Testimonials></Testimonials>
     </section>
     <video src="">
       <!-- in questo caso immagine con pulsante play al centro, secondo step video vero -->
