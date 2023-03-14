@@ -84,4 +84,8 @@ header {
 .latest-news {
   background-color: #fafafa;
 }
+
+.testimonials {
+  background-color: #1e1c1c;
+}
 </style>
