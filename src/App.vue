@@ -3,13 +3,15 @@ import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import Specialties from './components/Specialties.vue';
 import Bickford from './components/Bickford.vue';
+import Upcoming from './components/Upcoming.vue';
 
 export default {
   components: {
     Navbar,
     Hero,
     Specialties,
-    Bickford
+    Bickford,
+    Upcoming
 
   }
 }
@@ -27,7 +29,7 @@ export default {
       <Bickford></Bickford>
     </section>
     <section class="upcoming">
-      <!-- background totale con card laterale e serie di eventi/lista sulla dx -->
+      <Upcoming></Upcoming>
     </section>
     <section class=" leader">
       <!-- una row con due col che si divino lo spazio, la prima col testo e la seconda invece con percentuali/li -->
@@ -63,5 +65,10 @@ header {
 .specialities {
   background-color: #fafafa;
   padding: 100px 0;
+}
+
+.upcoming {
+  background-image: url('/img/h1-img-09.jpg');
+  height: 100vh;
 }
 </style>
