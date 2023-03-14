@@ -101,7 +101,7 @@ h2 {
 }
 
 .line {
-    border-bottom: 4px solid #ff4612;
+    border-bottom: 2px solid #ff4612;
     display: inline-block;
     width: 6%;
 }
