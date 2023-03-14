@@ -43,7 +43,7 @@ export default {
 .container.circle {
     background-color: white;
     position: relative;
-    top: -50px;
+    top: -150px;
 }
 
 .row {
