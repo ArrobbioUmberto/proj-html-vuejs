@@ -8,7 +8,7 @@ export default {
         <div class="row">
             <ul>
                 <li>
-                    <h1>upcoming events</h1>
+                    <h1 class="row-title">upcoming events</h1>
                 </li>
                 <li class="text">
                     <div class="date">
@@ -81,7 +81,7 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: white;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 ul {
@@ -91,14 +91,23 @@ ul {
 
 li {
     list-style-type: none;
-    padding: 10px 200px 10px 10px;
+    padding: 30px 200px 30px 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+}
+
+li:hover {
+    background-color: #ffffff;
 }
 
 .text {
     display: flex;
     flex-direction: row;
     align-items: start;
+}
+
+.row-title {
+    text-transform: capitalize;
 }
 
 .date {
@@ -123,7 +132,7 @@ li {
 }
 
 .event {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 i {
