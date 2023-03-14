@@ -21,7 +21,7 @@ export default {
     <Navbar></Navbar>
     <Hero></Hero>
   </header>
-  <main style="margin-top:-30px">
+  <main>
     <section class="specialities">
       <Specialties></Specialties>
       <Bickford></Bickford>
@@ -62,5 +62,6 @@ header {
 
 .specialities {
   background-color: #fafafa;
+  padding: 100px 0;
 }
 </style>
