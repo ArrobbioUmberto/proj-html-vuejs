@@ -5,14 +5,14 @@ export default {
 </script>
 <template>
     <div class="container circle">
-        <div class="row-text">
+        <div class=" row row-text">
             <div class="pointer-title">
                 <h1>our specialities</h1>
                 <span class="point">.</span>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
-        <div class="row">
+        <div class="row row-card">
             <ul>
                 <li>
                     <img src="/svg/svg-0.svg" alt="">
@@ -45,6 +45,11 @@ export default {
     top: -50px;
 }
 
+.row {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
 .row-text {
     text-align: center;
 }
@@ -74,7 +79,7 @@ p {
     margin: 0;
 }
 
-.row {
+.row-card {
     padding: 70px 0;
 }
 
