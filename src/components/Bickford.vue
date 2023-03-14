@@ -9,20 +9,25 @@ export default {
             <div class="col-img">
                 <img src="/img/h1-img-01.jpg" alt="">
                 <span class="arrow">&leftarrow;&rightarrow;</span>
-
             </div>
             <div class="col-text">
                 <h2>jason bickford</h2>
                 <h3>Founder and Executive Director</h3>
                 <span class="line"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam rem consectetur incidunt,
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam rem
+                    consectetur incidunt,
                     provident vero vel? Excepturi, qui nemo.</p>
-                <div class="logo">
-                    <i class="fa-brands fa-linkedin-in custom-logo"></i>
-                    <i class="fa-brands fa-facebook-f custom-logo fb"></i>
-                    <i class="fa-brands fa-twitter custom-logo"></i>
+                <div class="sign-section">
+                    <div class="logo">
+                        <i class="fa-brands fa-linkedin-in custom-logo"></i>
+                        <i class="fa-brands fa-facebook-f custom-logo fb"></i>
+                        <i class="fa-brands fa-twitter custom-logo"></i>
+                    </div>
+                    <img src="/img/firma.png" alt="" class="sign">
                 </div>
             </div>
+            <!-- <img src="/svg/svg-5.svg" alt="logo circolare grande"> -->
+            <!-- <img src="/svg/svg-6.svg" alt="freccia" class="immagine"> -->
         </div>
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
     </div>
@@ -63,14 +68,20 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(0%, -50%);
-    padding: 80px 50px;
+    padding: 130px 50px;
     z-index: 1;
 }
 
 .line {
-    border-bottom: 4px solid #ff4612;
+    border-bottom: 2px solid #ff4612;
     display: inline-block;
     width: 16%;
+}
+
+.description {
+    font-weight: 300;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 25px;
 }
 
 h2 {
@@ -92,9 +103,20 @@ h3 {
     right: 0%;
 }
 
+.sign-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sign {
+    margin-right: 30%;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .custom-logo {
@@ -108,5 +130,9 @@ h3 {
 
 .fb {
     padding: 5px 8px;
+}
+
+.immagine {
+    background-color: black;
 }
 </style>
