@@ -11,6 +11,7 @@ export default {
                 <span class="point">.</span>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <span class="line"></span>
         </div>
         <div class="row row-card">
             <ul>
@@ -97,5 +98,11 @@ li {
 
 h2 {
     text-transform: capitalize;
+}
+
+.line {
+    border-bottom: 4px solid #ff4612;
+    display: inline-block;
+    width: 6%;
 }
 </style>
