@@ -1,6 +1,18 @@
 <script >
 export default {
+    data() {
+        return {
+            Menulist: [
+                { text: 'homes' },
+                { text: 'pages' },
+                { text: 'blog' },
+                { text: 'shop' },
+                { text: 'events' },
+                { text: 'elements' }
+            ]
+        }
 
+    }
 }
 </script>
 
@@ -12,12 +24,9 @@ export default {
             </div>
             <div class="col">
                 <ul class="nav_menu">
-                    <li><a href=""> &rightarrow; homes</a></li>
-                    <li><a href="">pages</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">shop</a></li>
-                    <li><a href="">events</a></li>
-                    <li><a href="">elements</a></li>
+                    <li v-for="el in Menulist">
+                        <a href="#">{{ el.text }}</a>
+                    </li>
                     <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-list"></i></a></li>
                 </ul>
@@ -58,7 +67,11 @@ a {
 li {
     list-style-type: none;
     margin: 0 10px;
+}
 
+ul:first-child::before {
+    content: '\2192';
+    font-size: 25px;
 }
 
 a:hover {
