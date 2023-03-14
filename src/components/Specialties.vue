@@ -74,6 +74,10 @@ p {
     margin: 0;
 }
 
+.row {
+    margin: 70px 0;
+}
+
 ul {
     display: flex;
     flex-direction: row;
