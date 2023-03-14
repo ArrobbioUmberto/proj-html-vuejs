@@ -5,6 +5,7 @@ import Specialties from './components/Specialties.vue';
 import Bickford from './components/Bickford.vue';
 import Upcoming from './components/Upcoming.vue';
 import Leader from './components/Leader.vue';
+import Latest_news from './components/Latest_news.vue';
 
 export default {
   components: {
@@ -13,8 +14,8 @@ export default {
     Specialties,
     Bickford,
     Upcoming,
-    Leader
-
+    Leader,
+    Latest_news
   }
 }
 
@@ -37,7 +38,7 @@ export default {
       <Leader></Leader>
     </section>
     <section class="latest-news">
-      <!-- testo inziale con sotto card uguali ma stesso carosello hero con frecce -->
+      <Latest_news></Latest_news>
     </section>
     <section class="testimonials">
       <!-- bg nero con titolo in 'trasparenza' e sempre frecce e -->
@@ -49,7 +50,7 @@ export default {
       <section class="contact_us">
         <!-- contact us, due col che si dividono lo spazio e una col sotto con un li -->
       </section>
-      <section class="">
+      <section class="black_footer">
         <!-- real footer + copyright -->
       </section>
     </footer>
@@ -76,5 +77,9 @@ header {
 
 .leader {
   padding: 100px 0;
+}
+
+.latest-news {
+  background-color: #fafafa;
 }
 </style>
