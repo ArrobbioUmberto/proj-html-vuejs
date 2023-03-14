@@ -1,6 +1,35 @@
 <script>
 export default {
-
+    data() {
+        return {
+            Listevents: [
+                {
+                    day: '7',
+                    month: 'jan. 2022',
+                    title: 'melbourne coaching',
+                    time_event: '9:00 am - 5:00 pm, Jan 7, 2022',
+                    place: 'Cambridge, MA 02138, USA',
+                    btn: 'read more'
+                },
+                {
+                    day: '11',
+                    month: 'jan. 2022',
+                    title: 'new york coaching',
+                    time_event: '9:00 am - 5:00 pm, Jan 11, 2022',
+                    place: 'Cambridge, MA 02138, USA',
+                    btn: 'read more'
+                },
+                {
+                    day: '21',
+                    month: 'jan. 2022',
+                    title: 'london coaching',
+                    time_event: '9:00 am - 5:00 pm, Jan 21, 2022',
+                    place: 'Cambridge, MA 02138, USA',
+                    btn: 'read more'
+                },
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -10,58 +39,22 @@ export default {
                 <li>
                     <h1 class="row-title">upcoming events</h1>
                 </li>
-                <li class="text">
+                <li v-for="el in Listevents" class="text">
                     <div class="date">
-                        <p class="day"> 07</p>
-                        <p class="month">Jan. 2022</p>
+                        <p class="day"> {{ el.day }}</p>
+                        <p class="month">{{ el.month }}</p>
                     </div>
                     <div class="event">
-                        <h2 class="title">melbourne coaching</h2>
+                        <h2 class="title">{{ el.title }}</h2>
                         <p class="hours">
                             <i class="fa-regular fa-clock"></i>
-                            <span>9:00 am - 5:00 pm, Jan 7, 2022</span>
+                            <span>{{ el.time_event }}</span>
                         </p>
                         <p class="place">
                             <i class="fa-solid fa-location-dot"></i>
-                            <span>Cambridge, MA 02138, USA</span>
+                            <span>{{ el.place }}</span>
                         </p>
-                        <button class="btn">read more</button>
-                    </div>
-                </li>
-                <li class="text">
-                    <div class="date">
-                        <p class="day"> 07</p>
-                        <p class="month">Jan. 2022</p>
-                    </div>
-                    <div class="event">
-                        <h2 class="title">melbourne coaching</h2>
-                        <p class="hours">
-                            <i class="fa-regular fa-clock"></i>
-                            <span>9:00 am - 5:00 pm, Jan 7, 2022</span>
-                        </p>
-                        <p class="place">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Cambridge, MA 02138, USA</span>
-                        </p>
-                        <button class="btn">read more</button>
-                    </div>
-                </li>
-                <li class="text">
-                    <div class="date">
-                        <p class="day"> 07</p>
-                        <p class="month">Jan. 2022</p>
-                    </div>
-                    <div class="event">
-                        <h2 class="title">melbourne coaching</h2>
-                        <p class="hours">
-                            <i class="fa-regular fa-clock"></i>
-                            <span>9:00 am - 5:00 pm, Jan 7, 2022</span>
-                        </p>
-                        <p class="place">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Cambridge, MA 02138, USA</span>
-                        </p>
-                        <button class="btn">read more</button>
+                        <button class="btn">{{ el.btn }}</button>
                     </div>
                 </li>
             </ul>
