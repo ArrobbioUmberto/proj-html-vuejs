@@ -75,7 +75,7 @@ p {
 }
 
 .row {
-    margin: 70px 0;
+    padding: 70px 0;
 }
 
 ul {
