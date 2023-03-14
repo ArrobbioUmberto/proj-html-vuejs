@@ -43,6 +43,7 @@ export default {
 .point {
     color: #ff4612;
     font-size: 6rem;
+    padding: 35px 0 0;
 }
 
 .title {
