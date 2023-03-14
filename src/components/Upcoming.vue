@@ -82,6 +82,10 @@ ul {
     margin: 0;
 }
 
+li:first-child {
+    padding: 20px 200px 20px 40px;
+}
+
 li {
     list-style-type: none;
     padding: 30px 200px 30px 40px;
@@ -101,6 +105,7 @@ li:hover {
 
 .row-title {
     text-transform: capitalize;
+    margin: 10px;
 }
 
 .date {
