@@ -87,13 +87,14 @@ export default {
     border-bottom: 2px solid #ff4612;
     display: inline-block;
     width: 9%;
+    padding: 5px;
 }
 
 .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     font-family: "Source Sans Pro", sans-serif;
-    line-height: 24px;
+    line-height: 1.75rem;
 }
 
 .btn {
@@ -101,7 +102,7 @@ export default {
     background-color: transparent;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 0.8rem;
     text-align: start;
 }
 
@@ -118,7 +119,8 @@ export default {
     text-transform: capitalize;
     font-size: 1.2rem;
     margin: 0;
-    padding: 1.8rem 0;
+    padding: 1.4rem 0;
+    font-weight: bold;
 }
 
 .number_perc {
@@ -129,7 +131,6 @@ export default {
 .loader {
     display: inline-block;
     background-color: #ff4612;
-    height: 3px;
-    // width: 100px;
+    height: 5px;
 }
 </style>
