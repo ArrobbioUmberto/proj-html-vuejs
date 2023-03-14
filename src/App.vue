@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue';
 import Specialties from './components/Specialties.vue';
 import Bickford from './components/Bickford.vue';
 import Upcoming from './components/Upcoming.vue';
+import Leader from './components/Leader.vue';
 
 export default {
   components: {
@@ -11,7 +12,8 @@ export default {
     Hero,
     Specialties,
     Bickford,
-    Upcoming
+    Upcoming,
+    Leader
 
   }
 }
@@ -29,10 +31,10 @@ export default {
       <Bickford></Bickford>
     </section>
     <section class="upcoming">
-      <Upcoming></Upcoming>
+      <Upcoming> </Upcoming>
     </section>
     <section class=" leader">
-      <!-- una row con due col che si divino lo spazio, la prima col testo e la seconda invece con percentuali/li -->
+      <Leader></Leader>
     </section>
     <section class="latest-news">
       <!-- testo inziale con sotto card uguali ma stesso carosello hero con frecce -->
@@ -70,5 +72,9 @@ header {
 .upcoming {
   background-image: url('/img/h1-img-09.jpg');
   height: 100vh;
+}
+
+.leader {
+  padding: 100px 0;
 }
 </style>
