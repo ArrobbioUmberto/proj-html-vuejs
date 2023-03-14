@@ -35,6 +35,8 @@ export default {
 <template>
     <div class="container">
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
+        <span class="right-arrow">&RightArrow;</span>
+        <span class="left-arrow">&leftarrow;</span>
         <div class=" row row-text">
             <div class="pointer-title">
                 <h1>latest news</h1>
@@ -195,5 +197,24 @@ i {
     text-transform: uppercase;
     background-color: transparent;
     padding: 15px 0;
+}
+
+.left-arrow,
+.right-arrow {
+    font-size: 2.5rem;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
 }
 </style>
