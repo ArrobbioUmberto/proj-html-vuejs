@@ -1,6 +1,16 @@
 <script>
 export default {
-
+    data() {
+        return {
+            ListBrand: [
+                { image: '/img/h4-clients-img-03.png' },
+                { image: '/img/h4-clients-img-05.png' },
+                { image: '/img/h4-clients-img-07.png' },
+                { image: '/img/h4-clients-img-09.png' },
+                { image: '/img/h4-clients-img-01.png' },
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -30,11 +40,20 @@ export default {
 
                             <input type="text" placeholder="Write a message..." class="text">
                         </div>
-                        <button class="btn"> <span>send </span> <span class="arrow">| &rightarrow;</span> </button>
+                        <button class="btn">
+                            <span>send </span>
+                            <span class="arrow">| &rightarrow;</span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col"> brand li</div>
+            <div class="col brands">
+                <ul>
+                    <li v-for="el in ListBrand">
+                        <img :src="el.image" alt="">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -53,6 +72,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 80px;
 }
 
 .up-section {
@@ -90,7 +110,7 @@ export default {
 
 .plus-3 {
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     right: 19%;
 }
 
@@ -182,7 +202,7 @@ input:active {
     background-color: #ff4612;
     border: none;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 14px 10px;
     color: white;
     margin-top: 20px;
     display: flex;
@@ -195,5 +215,19 @@ span.arrow {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 30px;
 
+}
+
+.brands {
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
 }
 </style>
