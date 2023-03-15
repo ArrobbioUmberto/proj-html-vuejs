@@ -1,6 +1,31 @@
 <script>
 export default {
-
+    data() {
+        return {
+            Cardlist: [
+                {
+                    img: '/svg/svg-0.svg',
+                    title: 'knowing',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing.'
+                },
+                {
+                    img: '/svg/svg-1.svg',
+                    title: 'selling',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing.'
+                },
+                {
+                    img: '/svg/svg-2.svg',
+                    title: 'learning',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing.'
+                },
+                {
+                    img: '/svg/svg-3.svg',
+                    title: 'contact',
+                    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing.'
+                }
+            ]
+        }
+    }
 }
 </script>
 <template>
@@ -15,25 +40,10 @@ export default {
         </div>
         <div class="row row-card">
             <ul>
-                <li>
-                    <img src="/svg/svg-0.svg" alt="">
-                    <h2>knowing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </li>
-                <li>
-                    <img src="/svg/svg-1.svg" alt="">
-                    <h2>knowing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </li>
-                <li>
-                    <img src="/svg/svg-2.svg" alt="">
-                    <h2>knowing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </li>
-                <li>
-                    <img src="/svg/svg-3.svg" alt="">
-                    <h2>knowing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <li v-for="el in Cardlist">
+                    <img :src="el.img" alt="">
+                    <h2>{{ el.title }}</h2>
+                    <p>{{ el.text }}</p>
                 </li>
             </ul>
         </div>
