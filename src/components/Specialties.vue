@@ -40,8 +40,10 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .container.circle {
-    background-color: white;
+    background-color: $white;
     position: relative;
     top: -150px;
 }
@@ -63,7 +65,7 @@ export default {
 }
 
 .point {
-    color: #ff4612;
+    color: $orange-primary;
     font-size: 6rem;
 }
 
@@ -75,7 +77,7 @@ h1 {
 
 p {
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-size: 24px;
     margin: 0;
 }
@@ -101,7 +103,7 @@ h2 {
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 6%;
 }

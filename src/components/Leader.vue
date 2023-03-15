@@ -52,6 +52,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .row {
     display: flex;
     flex-direction: row;
@@ -79,12 +81,12 @@ export default {
 }
 
 .point {
-    color: #ff4612;
+    color: $orange-primary;
     font-size: 2.5rem;
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 9%;
     padding: 5px;
@@ -93,7 +95,7 @@ export default {
 .text {
     font-size: 1.2rem;
     font-weight: 300;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
     line-height: 1.75rem;
 }
 
@@ -111,7 +113,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $variant-black;
     margin-bottom: -1rem;
 }
 
@@ -130,7 +132,7 @@ export default {
 
 .loader {
     display: inline-block;
-    background-color: #ff4612;
+    background-color: $orange-primary;
     height: 5px;
 }
 </style>

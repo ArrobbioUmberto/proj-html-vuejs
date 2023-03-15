@@ -62,6 +62,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .event-section {
     max-width: 1380px;
     margin: 0 auto;
@@ -73,7 +75,7 @@ export default {
 .row {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $white;
     max-width: 700px;
 }
 
@@ -89,12 +91,12 @@ li:first-child {
 li {
     list-style-type: none;
     padding: 30px 200px 30px 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #fafafa;
+    border-bottom: 1px solid $variant-black;
+    background-color: $grey-upcoming;
 }
 
 li:hover {
-    background-color: #ffffff;
+    background-color: $white-hover;
 }
 
 .text {
@@ -111,9 +113,9 @@ li:hover {
 .date {
     color: white;
     padding: 10px;
-    background-color: #ff4612;
+    background-color: $orange-primary;
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
     margin-top: 20px;
 }
 
@@ -121,7 +123,7 @@ li:hover {
     font-weight: bold;
     margin: 0;
     font-size: 20px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
 }
 
 .month {
@@ -134,7 +136,7 @@ li:hover {
 }
 
 i {
-    color: #ff4612;
+    color: $orange-primary;
     margin-right: 5px;
 }
 
@@ -145,7 +147,7 @@ i {
 .hours,
 .place {
     font-weight: 300;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
     line-height: 15px;
 }
 

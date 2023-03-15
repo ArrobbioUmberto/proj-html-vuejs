@@ -37,6 +37,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .header {
     height: 100px;
 }
@@ -61,7 +63,7 @@ a {
     text-transform: uppercase;
     margin: 5px 10px;
     font-weight: bold;
-    color: black;
+    color: $black;
     padding: 10px 0;
 }
 
@@ -77,7 +79,7 @@ li {
 }
 
 a:hover {
-    color: orange;
+    color: $orange-primary;
     cursor: pointer;
 }
 </style>

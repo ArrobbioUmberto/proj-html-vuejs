@@ -32,8 +32,10 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .title-bg {
-    color: #181515;
+    color: $dark-title;
     font-size: 13.7rem;
     text-transform: capitalize;
     text-align: center;
@@ -67,19 +69,19 @@ export default {
 }
 
 .card>img {
-    border: 4px solid white;
+    border: 4px solid $white;
     border-radius: 100%;
 }
 
 .name {
-    color: white;
+    color: $white;
     text-transform: capitalize;
 }
 
 .text {
-    color: white;
+    color: $white;
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-size: 1.5rem;
 }
 
@@ -96,27 +98,27 @@ export default {
 }
 
 .white-line {
-    background-color: white;
+    background-color: $white;
     height: 2px;
     width: 30px;
 }
 
 .grey-line {
-    background-color: grey;
+    background-color: $grey-line;
     height: 2px;
     width: 60px;
 }
 
 .page-number {
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-weight: lighter;
 }
 
 .left-arrow,
 .right-arrow {
     font-size: 2.5rem;
-    color: white;
+    color: $white;
 }
 
 .left-arrow {

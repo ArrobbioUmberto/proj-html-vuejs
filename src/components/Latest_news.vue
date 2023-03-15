@@ -65,6 +65,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .container {
     position: relative;
     padding: 100px 0;
@@ -98,7 +100,7 @@ li {
 }
 
 .point {
-    color: #ff4612;
+    color: $orange-primary;
     font-size: 3rem;
 }
 
@@ -110,13 +112,13 @@ h1 {
 
 p {
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-size: 24px;
     margin: 0;
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 6%;
 }
@@ -142,7 +144,7 @@ ul {
 .date,
 .speaker {
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-size: 1rem;
     padding: 0 5px;
     text-transform: capitalize;
@@ -155,11 +157,11 @@ h2 {
 }
 
 i {
-    color: #ff4612;
+    color: $orange-primary;
 }
 
 .btn-corner>i {
-    color: white;
+    color: $white;
     padding: 0 3px;
 }
 
@@ -175,18 +177,18 @@ i {
 }
 
 .btn-corner {
-    background-color: #ff4612;
+    background-color: $orange-primary;
     width: max-content;
     border: none;
     text-transform: capitalize;
     padding: 10px;
-    color: white;
+    color: $white;
     position: absolute;
     right: 5%;
     bottom: 40%;
     padding: 1rem 1.5rem;
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
 }
 
 .btn {
