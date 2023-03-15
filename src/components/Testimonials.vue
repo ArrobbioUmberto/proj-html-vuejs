@@ -24,10 +24,11 @@ export default {
     },
     methods: {
         previousImage() {
+            const lastIndex = this.Testimonails.length - 1
             // const currentIndex = this.currentIndex
             if (this.currentIndex === 0) {
-                this.currentIndex--
-                console.log(this.currentIndex, 'clicco freccia prev')
+                this.currentIndex = lastIndex
+                console.log(this.currentIndex, 'clicco freccia prev', lastIndex)
             } else {
                 this.currentIndex = this.Testimonails.lenght - 1
             }
