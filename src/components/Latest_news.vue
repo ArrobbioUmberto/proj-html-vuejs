@@ -5,7 +5,7 @@ export default {
             Cardlist: [
                 {
                     image: '/img/h1-blog-img-02.jpg',
-                    title: 'next investment',
+                    title: 'boost motivation',
                     time_event: 'May 5, 2019',
                     speaker: 'amanda doe',
                     btn: 'read more',
@@ -21,13 +21,32 @@ export default {
                 },
                 {
                     image: '/img/h1-blog-img-04.jpg',
+                    title: 'next investment',
+                    time_event: 'May 5, 2019',
+                    speaker: 'amanda doe',
+                    btn: 'read more',
+                    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae obcaecati nihil repudiandae....'
+                },
+                {
+                    image: '/img/h1-blog-img-01.jpg',
                     title: 'new business day',
                     time_event: 'May 5, 2019',
                     speaker: 'amanda doe',
                     btn: 'read more',
                     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae obcaecati nihil repudiandae....'
                 }
-            ]
+
+            ],
+            currentIndex: 0,
+        }
+
+    },
+    methods: {
+        previousImage() {
+
+        },
+        nextImage() {
+
         }
     }
 }
@@ -35,8 +54,8 @@ export default {
 <template>
     <div class="container">
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
-        <span class="right-arrow">&RightArrow;</span>
-        <span class="left-arrow">&leftarrow;</span>
+        <span @click="nextImage()" class="right-arrow">&RightArrow;</span>
+        <span @click="nextImage()" class="left-arrow">&leftarrow;</span>
         <div class=" row row-text">
             <div class="pointer-title">
                 <h1>latest news</h1>
@@ -46,8 +65,8 @@ export default {
             <span class="line"></span>
         </div>
         <div class="row row-card">
-            <ul>
-                <li v-for="el in Cardlist" class="card">
+            <div class="col">
+                <div v-for="(el, index) in Cardlist" class="card">
                     <div class="card-img">
                         <img :src="el.image" alt="">
                         <button class="btn-corner"><i class="fa-solid fa-tag"></i>business, leading</button>
@@ -59,8 +78,8 @@ export default {
                     <h2>{{ el.title }}</h2>
                     <p class="card-text">{{ el.text }}</p>
                     <button class="btn">{{ el.btn }}</button>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -75,10 +94,7 @@ export default {
 .row {
     max-width: 1380px;
     margin: 0 auto;
-}
-
-li {
-    list-style-type: none;
+    overflow: auto;
 }
 
 .row-text {
@@ -123,17 +139,20 @@ p {
     width: 6%;
 }
 
-ul {
+.col {
     display: flex;
     flex-direction: row;
     gap: 40px;
     padding: 0;
+    overflow: auto;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 3);
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
     position: relative;
 }
 
