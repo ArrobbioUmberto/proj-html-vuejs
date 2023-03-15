@@ -95,8 +95,13 @@ li {
     background-color: $grey-upcoming;
 }
 
+li:first-child:hover {
+    transform: none;
+}
+
 li:hover {
     background-color: $white-hover;
+    transform: scale(1.1);
 }
 
 .text {
