@@ -7,6 +7,7 @@ import Upcoming from './components/Upcoming.vue';
 import Leader from './components/Leader.vue';
 import Latest_news from './components/Latest_news.vue';
 import Testimonials from './components/Testimonials.vue';
+import Video from './components/Video.vue';
 
 export default {
   components: {
@@ -17,7 +18,8 @@ export default {
     Upcoming,
     Leader,
     Latest_news,
-    Testimonials
+    Testimonials,
+    Video
   }
 }
 
@@ -45,18 +47,18 @@ export default {
     <section class="testimonials">
       <Testimonials></Testimonials>
     </section>
-    <video src="">
-      <!-- in questo caso immagine con pulsante play al centro, secondo step video vero -->
-    </video>
-    <footer>
-      <section class="contact_us">
-        <!-- contact us, due col che si dividono lo spazio e una col sotto con un li -->
-      </section>
-      <section class="black_footer">
-        <!-- real footer + copyright -->
-      </section>
-    </footer>
+    <section class="video">
+      <Video></Video>
+    </section>
   </main>
+  <footer>
+    <section class="contact_us">
+      <!-- contact us, due col che si dividono lo spazio e una col sotto con un li -->
+    </section>
+    <section class="black_footer">
+      <!-- real footer + copyright -->
+    </section>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -87,5 +89,11 @@ header {
 
 .testimonials {
   background-color: #1e1c1c;
+}
+
+.video {
+  background-image: url('/img/h1-img-04.jpg');
+  height: 95vh;
+  object-fit: contain;
 }
 </style>
