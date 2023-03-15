@@ -1,23 +1,61 @@
 <script>
 export default {
-
+    data() {
+        return {
+            Testimonails: [
+                {
+                    img: '/img/h3-img-04.png',
+                    name: 'cynthia clark',
+                    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                },
+                {
+                    img: '/img/h3-img-07.png',
+                    name: 'clarice hasting',
+                    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                },
+                {
+                    img: '/img/h3-img-08.png',
+                    name: 'brenda kelly',
+                    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                }
+            ],
+            currentIndex: 0,
+        }
+    },
+    methods: {
+        previousImage() {
+            // const currentIndex = this.currentIndex
+            if (this.currentIndex === 0) {
+                this.currentIndex--
+                console.log(this.currentIndex, 'clicco freccia prev')
+            } else {
+                this.currentIndex = this.Testimonails.lenght - 1
+            }
+            console.log('cliccato freccia')
+        },
+        nextImage() {
+            if (this.currentIndex === this.Testimonails.length - 1) {
+                this.currentIndex = 0
+                console.log(this.currentIndex)
+            } else {
+                this.currentIndex++
+                console.log(this.currentIndex, 'cliccato sopra')
+            }
+        }
+    }
 }
 </script>
 <template>
     <div class="container">
-        <span class="right-arrow">&RightArrow;</span>
-        <span class="left-arrow">&leftarrow;</span>
+        <span @click="nextImage" class="right-arrow">&RightArrow;</span>
+        <span @click="previousImage" class="left-arrow">&leftarrow;</span>
         <h1 class="title-bg">testimonials.</h1>
         <div class="row">
             <div class="col">
-                <div class="card">
-                    <img src="/img/h3-img-04.png" alt="">
-                    <h2 class="name">cynthia clark</h2>
-                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita
-                        reiciendis
-                        asperiores
-                        repellat quam."
-                    </p>
+                <div v-for="(el, index) in Testimonails " class="card" :class="{ hidden: index != currentIndex }">
+                    <img :src="el.img" alt="">
+                    <h2 class="name">{{ el.name }}</h2>
+                    <p class="text">{{ el.text }} </p>
                     <div class="page-set">
                         <span class="page-number">01</span>
                         <div class="line-group">
@@ -33,6 +71,10 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use '../style/partials/variables.scss' as *;
+
+.col .hidden {
+    display: none;
+}
 
 .title-bg {
     color: $dark-title;
