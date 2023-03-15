@@ -8,6 +8,7 @@ import Leader from './components/Leader.vue';
 import Latest_news from './components/Latest_news.vue';
 import Testimonials from './components/Testimonials.vue';
 import Video from './components/Video.vue';
+import ContactUs from './components/ContactUs.vue';
 
 export default {
   components: {
@@ -19,7 +20,8 @@ export default {
     Leader,
     Latest_news,
     Testimonials,
-    Video
+    Video,
+    ContactUs
   }
 }
 
@@ -53,7 +55,7 @@ export default {
   </main>
   <footer>
     <section class="contact_us">
-      <!-- contact us, due col che si dividono lo spazio e una col sotto con un li -->
+      <ContactUs></ContactUs>
     </section>
     <section class="black_footer">
       <!-- real footer + copyright -->
