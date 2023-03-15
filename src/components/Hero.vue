@@ -30,6 +30,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .hero {
     max-width: 600px;
     margin-left: 12.3rem;
@@ -41,7 +43,7 @@ export default {
 }
 
 .point {
-    color: #ff4612;
+    color: $orange-primary;
     font-size: 6rem;
     padding: 35px 0 0;
 }
@@ -110,6 +112,6 @@ span {
 
 button:hover {
     color: white;
-    background-color: #ff4612;
+    background-color: $orange-primary;
 }
 </style>

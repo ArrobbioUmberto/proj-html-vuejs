@@ -71,6 +71,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .col {
     flex-basis: calc(100% / 4);
 }
@@ -83,14 +85,14 @@ export default {
 
 p {
     margin: 0;
-    color: white;
-    font-family: "Source Sans Pro", sans-serif;
+    color: $white;
+    font-family: $light-font;
     font-weight: lighter;
     font-size: 15px;
 }
 
 .title {
-    color: white;
+    color: $white;
     font-size: 30px;
     font-weight: bold;
 }
@@ -100,7 +102,7 @@ p {
 }
 
 .fa-twitter {
-    color: #ff4612;
+    color: $orange-primary;
 }
 
 .list-wrap {
@@ -123,7 +125,7 @@ li {
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 10%;
 }
@@ -142,8 +144,8 @@ li {
 }
 
 .custom-logo {
-    background-color: white;
-    color: black;
+    background-color: $white;
+    color: $black;
     aspect-ratio: 1/1;
     border-radius: 25px;
     padding: 5px;
@@ -155,7 +157,7 @@ li {
 }
 
 a {
-    color: white;
+    color: $white;
     text-decoration: none;
 }
 
@@ -165,8 +167,8 @@ a {
 
 .important_links a {
     padding: 10px 0;
-    color: white;
-    font-family: "Source Sans Pro", sans-serif;
+    color: $white;
+    font-family: $light-font;
     font-weight: lighter;
     font-size: 15px;
 }
@@ -180,8 +182,8 @@ a {
 }
 
 .contact {
-    color: white;
-    font-family: "Source Sans Pro", sans-serif;
+    color: $white;
+    font-family: $light-font;
     font-weight: lighter;
     margin: 10px 0;
 }
@@ -191,20 +193,20 @@ a {
 }
 
 .contact i {
-    color: #ff4612;
+    color: $orange-primary;
     padding: 0 5px;
 }
 
 .btn {
     background-color: transparent;
-    color: white;
+    color: $white;
     border: none;
     text-transform: uppercase;
 }
 
 .form-part {
     background-color: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     width: max-content;
 }
 

@@ -24,6 +24,7 @@ export default {
             </div>
             <div class="col">
                 <ul class="nav_menu">
+                    <li><a href="#" class="arrow">&rightarrow;</a></li>
                     <li v-for="el in Menulist">
                         <a href="#">{{ el.text }}</a>
                     </li>
@@ -69,9 +70,10 @@ li {
     margin: 0 10px;
 }
 
-ul:first-child::before {
-    content: '\2192';
-    font-size: 25px;
+.arrow {
+    font-size: 24px;
+    margin: 0 -20px;
+    padding: 0 10px;
 }
 
 a:hover {

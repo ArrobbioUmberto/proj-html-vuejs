@@ -58,6 +58,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .container {
     padding: 100px 0;
 }
@@ -128,7 +130,7 @@ export default {
 }
 
 .point {
-    color: #ff4612;
+    color: $orange-primary;
     font-size: 3rem;
 }
 
@@ -140,13 +142,13 @@ h1 {
 h3 {
     font-weight: lighter;
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     font-size: 24px;
     margin: 10px 0;
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 16%;
 }
@@ -176,7 +178,7 @@ input:active {
 .text,
 .mail,
 .name {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $variant-black;
     padding-left: 10px;
     text-align: start;
 }
@@ -199,7 +201,7 @@ input:active {
 }
 
 .btn {
-    background-color: #ff4612;
+    background-color: $orange-primary;
     border: none;
     text-transform: uppercase;
     padding: 14px 10px;
@@ -212,7 +214,7 @@ input:active {
 span.arrow {
     font-size: 25px;
     font-weight: lighter;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $light-font;
     line-height: 30px;
 
 }

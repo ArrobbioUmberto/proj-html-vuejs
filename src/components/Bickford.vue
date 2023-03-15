@@ -31,6 +31,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../style/partials/variables.scss' as *;
+
 .container {
     position: relative;
 }
@@ -54,14 +56,14 @@ export default {
     bottom: 0;
     left: 0;
     font-size: 30px;
-    background-color: #ff4612;
+    background-color: $orange-primary;
     padding: 10px 20px;
-    color: white;
+    color: $white;
     margin-bottom: 4px;
 }
 
 .col-text {
-    background-color: white;
+    background-color: $white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,14 +73,14 @@ export default {
 }
 
 .line {
-    border-bottom: 2px solid #ff4612;
+    border-bottom: 2px solid $orange-primary;
     display: inline-block;
     width: 16%;
 }
 
 .description {
     font-weight: 300;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
     line-height: 25px;
 }
 
@@ -90,7 +92,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $light-font;
     font-size: 20px;
     margin: 0;
 }
@@ -118,8 +120,8 @@ h3 {
 }
 
 .custom-logo {
-    background-color: #ff4612;
-    color: white;
+    background-color: $orange-primary;
+    color: $white;
     aspect-ratio: 1/1;
     border-radius: 25px;
     padding: 5px;
@@ -131,6 +133,6 @@ h3 {
 }
 
 .immagine {
-    background-color: black;
+    background-color: $black;
 }
 </style>
