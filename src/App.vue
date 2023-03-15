@@ -9,6 +9,8 @@ import Latest_news from './components/Latest_news.vue';
 import Testimonials from './components/Testimonials.vue';
 import Video from './components/Video.vue';
 import ContactUs from './components/ContactUs.vue';
+import DarkFooter from './components/DarkFooter.vue';
+import Copyright from './components/Copyright.vue';
 
 export default {
   components: {
@@ -21,7 +23,9 @@ export default {
     Latest_news,
     Testimonials,
     Video,
-    ContactUs
+    ContactUs,
+    DarkFooter,
+    Copyright
   }
 }
 
@@ -57,8 +61,9 @@ export default {
     <section class="contact_us">
       <ContactUs></ContactUs>
     </section>
-    <section class="black_footer">
-      <!-- real footer + copyright -->
+    <section class="dark_footer">
+      <DarkFooter class="darkbg"></DarkFooter>
+      <Copyright class="redbg"></Copyright>
     </section>
   </footer>
 </template>
@@ -97,5 +102,17 @@ header {
   background-image: url('/img/h1-img-04.jpg');
   height: 95vh;
   object-fit: contain;
+}
+
+.dark-footer {
+  width: 100vw;
+}
+
+.darkbg {
+  background-color: #181515;
+}
+
+.redbg {
+  background-color: #ff4612;
 }
 </style>
