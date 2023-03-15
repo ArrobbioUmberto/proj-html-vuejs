@@ -7,16 +7,19 @@ export default {
                     img: '/img/h3-img-04.png',
                     name: 'cynthia clark',
                     text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                    page: '01'
                 },
                 {
                     img: '/img/h3-img-07.png',
                     name: 'clarice hasting',
                     text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                    page: '02'
                 },
                 {
                     img: '/img/h3-img-08.png',
                     name: 'brenda kelly',
                     text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi expedita reiciendis asperiores repellat quam."',
+                    page: '03'
                 }
             ],
             currentIndex: 0,
@@ -25,22 +28,17 @@ export default {
     methods: {
         previousImage() {
             const lastIndex = this.Testimonails.length - 1
-            // const currentIndex = this.currentIndex
             if (this.currentIndex === 0) {
                 this.currentIndex = lastIndex
-                console.log(this.currentIndex, 'clicco freccia prev', lastIndex)
             } else {
-                this.currentIndex = this.Testimonails.lenght - 1
+                this.currentIndex--
             }
-            console.log('cliccato freccia')
         },
         nextImage() {
             if (this.currentIndex === this.Testimonails.length - 1) {
                 this.currentIndex = 0
-                console.log(this.currentIndex)
             } else {
                 this.currentIndex++
-                console.log(this.currentIndex, 'cliccato sopra')
             }
         }
     }
@@ -58,7 +56,7 @@ export default {
                     <h2 class="name">{{ el.name }}</h2>
                     <p class="text">{{ el.text }} </p>
                     <div class="page-set">
-                        <span class="page-number">01</span>
+                        <span class="page-number">{{ el.page }}</span>
                         <div class="line-group">
                             <span class="white-line"></span>
                             <span class="grey-line"></span>
