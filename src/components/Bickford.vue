@@ -26,8 +26,6 @@ export default {
                     <img src="/img/firma.png" alt="" class="sign">
                 </div>
             </div>
-            <!-- <img src="/svg/svg-5.svg" alt="logo circolare grande"> -->
-            <!-- <img src="/svg/svg-6.svg" alt="freccia" class="immagine"> -->
         </div>
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
     </div>
