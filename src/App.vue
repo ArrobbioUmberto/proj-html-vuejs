@@ -61,10 +61,10 @@ export default {
     <section class="contact_us">
       <ContactUs></ContactUs>
     </section>
-    <section class="dark_footer">
-      <DarkFooter class="darkbg"></DarkFooter>
-      <Copyright class="redbg"></Copyright>
+    <section class="footer">
+      <DarkFooter></DarkFooter>
     </section>
+    <Copyright class="redbg"></Copyright>
   </footer>
 </template>
 
@@ -104,15 +104,12 @@ header {
   object-fit: contain;
 }
 
-.dark-footer {
-  width: 100vw;
-}
-
-.darkbg {
+.footer {
   background-color: #181515;
 }
 
 .redbg {
   background-color: #ff4612;
+  margin-top: -16px;
 }
 </style>
