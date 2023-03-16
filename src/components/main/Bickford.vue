@@ -1,14 +1,52 @@
 <script>
 export default {
-
+    data() {
+        return {
+            PhotoList: [
+                {
+                    image: '/img/h1-img-01.jpg'
+                },
+                {
+                    image: '/img/h1-img-02.jpg'
+                },
+                {
+                    image: '/img/h1-img-03.jpg'
+                },
+            ],
+            currentIndex: 0,
+        }
+    },
+    methods: {
+        previousImage() {
+            const lastIndex = this.PhotoList.length - 1
+            if (this.currentIndex === 0) {
+                this.currentIndex = lastIndex
+            } else {
+                this.currentIndex--
+            }
+        },
+        nextImage() {
+            if (this.currentIndex === this.PhotoList.length - 1) {
+                this.currentIndex = 0
+            } else {
+                this.currentIndex++
+            }
+        }
+    }
 }
 </script>
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-img">
-                <img src="/img/h1-img-01.jpg" alt="">
-                <span class="arrow">&leftarrow;&rightarrow;</span>
+            <div v-for="(el, index) in PhotoList" class="col-img" :class="{ hidden: index != currentIndex }">
+                <div class="card-img">
+                    <img :src="el.image" alt="">
+                    <div class="arrow-box">
+                        <span @click="previousImage" class="left-arrow">&leftarrow;</span>
+                        <span @click="nextImage" class="right-arrow">&RightArrow;</span>
+                    </div>
+
+                </div>
             </div>
             <div class="col-text">
                 <h2>jason bickford</h2>
@@ -35,6 +73,26 @@ export default {
 
 .container {
     position: relative;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.left-arrow,
+.right-arrow {
+    font-size: 2rem;
+    color: $white;
+    margin: 0 5px;
+}
+
+.arrow-box {
+    background-color: $orange-primary;
+    max-width: max-content;
+    position: absolute;
+    bottom: 4px;
+    padding: 20px 30px;
 }
 
 .row {

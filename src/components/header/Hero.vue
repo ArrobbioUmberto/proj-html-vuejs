@@ -20,17 +20,17 @@ export default {
                 </button>
                 <button>
                     <span>purchase</span>
-                    <span class="arrow-button">| &rightarrow;</span>
-                </button>
+                <span class="arrow-button">| &rightarrow;</span>
+            </button>
             </div>
         </div>
-        <div class="row_arrow">
-            <span class="arrow-left">&LeftArrow;</span> <span class="arrow-right">&RightArrow;</span>
-        </div>
+        <!-- <div class="row_arrow">
+                    <span class="arrow-left">&LeftArrow;</span> <span class="arrow-right">&RightArrow;</span>
+                </div> -->
     </div>
 </template>
 <style lang="scss" scoped>
-@use '../style/partials/variables.scss' as *;
+@use '.../style/partials/variables.scss' as *;
 
 .hero {
     max-width: 600px;

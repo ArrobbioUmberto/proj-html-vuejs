@@ -1,16 +1,16 @@
 <script>
-import Navbar from './components/Navbar.vue';
-import Hero from './components/Hero.vue';
-import Specialties from './components/Specialties.vue';
-import Bickford from './components/Bickford.vue';
-import Upcoming from './components/Upcoming.vue';
-import Leader from './components/Leader.vue';
-import Latest_news from './components/Latest_news.vue';
-import Testimonials from './components/Testimonials.vue';
-import Video from './components/Video.vue';
-import ContactUs from './components/ContactUs.vue';
-import DarkFooter from './components/DarkFooter.vue';
-import Copyright from './components/Copyright.vue';
+import Navbar from './components/header/Navbar.vue';
+import Hero from './components/header/Hero.vue';
+import Specialties from './components/main/Specialties.vue';
+import Bickford from './components/main/Bickford.vue';
+import Upcoming from './components/main/Upcoming.vue';
+import Leader from './components/main/Leader.vue';
+import Latest_news from './components/main/Latest_news.vue';
+import Testimonials from './components/main/Testimonials.vue';
+import Video from './components/main/Video.vue';
+import ContactUs from './components/footer/ContactUs.vue';
+import DarkFooter from './components/footer/DarkFooter.vue';
+import Copyright from './components/footer/Copyright.vue';
 
 export default {
   components: {
@@ -73,6 +73,8 @@ export default {
 
 header {
   background-image: url('/img/rev-slider-main-home-img-03.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -83,6 +85,8 @@ header {
 
 .upcoming {
   background-image: url('/img/h1-img-09.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -100,8 +104,9 @@ header {
 
 .video {
   background-image: url('/img/h1-img-04.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 95vh;
-  object-fit: contain;
 }
 
 .footer {
