@@ -214,5 +214,10 @@ a {
     background-color: transparent;
     border: none;
     padding: 10px 0;
+    color: $white;
+}
+
+input:focus {
+    outline: none;
 }
 </style>
