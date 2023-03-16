@@ -18,6 +18,10 @@ i {
     font-size: 60px;
 }
 
+i:hover {
+    transform: scale(1.2);
+}
+
 .container {
     display: flex;
     justify-content: center;
