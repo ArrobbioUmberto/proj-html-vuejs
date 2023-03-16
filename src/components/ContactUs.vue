@@ -3,13 +3,44 @@ export default {
     data() {
         return {
             ListBrand: [
-                { image: '/img/h4-clients-img-03.png' },
-                { image: '/img/h4-clients-img-05.png' },
-                { image: '/img/h4-clients-img-07.png' },
-                { image: '/img/h4-clients-img-09.png' },
-                { image: '/img/h4-clients-img-01.png' },
+                {
+                    image: '/img/h4-clients-img-03.png',
+                    red_image: '/img/h4-clients-img-04-1.png',
+                    black_image: '/img/h4-clients-img-03.png'
+                },
+                {
+                    image: '/img/h4-clients-img-05.png',
+                    red_image: '/img/h4-clients-img-06-1.png',
+                    black_image: '/img/h4-clients-img-05.png'
+                },
+                {
+                    image: '/img/h4-clients-img-07.png',
+                    red_image: '/img/h4-clients-img-08-1.png',
+                    black_image: '/img/h4-clients-img-07.png'
+                },
+                {
+                    image: '/img/h4-clients-img-09.png',
+                    red_image: '/img/h4-clients-img-10-1.png',
+                    black_image: '/img/h4-clients-img-09.png'
+                },
+                {
+                    image: '/img/h4-clients-img-01.png',
+                    red_image: '/img/h4-clients-img-02.png',
+                    black_image: '/img/h4-clients-img-01.png'
+                },
             ]
         }
+    },
+    methods: {
+        ImgHover(index) {
+            const red_image = this.ListBrand[index].red_image
+            this.ListBrand[index].image = red_image
+        },
+        LeaveMouse(index) {
+            const black_image = this.ListBrand[index].black_image
+            this.ListBrand[index].image = black_image
+        }
+
     }
 }
 </script>
@@ -49,8 +80,8 @@ export default {
             </div>
             <div class="col brands">
                 <ul>
-                    <li v-for="el in ListBrand">
-                        <img :src="el.image" alt="">
+                    <li v-for="(el, index) in ListBrand">
+                        <img :src="el.image" v-on:mouseover="ImgHover(index)" v-on:mouseleave="LeaveMouse(index)" alt="">
                     </li>
                 </ul>
             </div>
@@ -171,8 +202,8 @@ input {
     border: none;
 }
 
-input:active {
-    border: none;
+input:focus {
+    outline: none;
 }
 
 .text,
