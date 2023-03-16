@@ -152,6 +152,11 @@ li {
     margin: 10px 5px;
 }
 
+.custom-logo:hover {
+    color: $orange-primary;
+    transform: scale(1.3);
+}
+
 .fb {
     padding: 5px 8px;
 }
@@ -196,6 +201,7 @@ a {
     color: $orange-primary;
     padding: 0 5px;
 }
+
 
 .btn {
     background-color: transparent;
