@@ -37,25 +37,17 @@ export default {
                 }
 
             ],
-            currentIndex: 0,
         }
 
     },
     methods: {
-        previousImage() {
 
-        },
-        nextImage() {
-
-        }
     }
 }
 </script>
 <template>
     <div class="container">
         <img src="/svg/svg-4.svg" alt="" class="point-circle">
-        <span @click="nextImage()" class="right-arrow">&RightArrow;</span>
-        <span @click="nextImage()" class="left-arrow">&leftarrow;</span>
         <div class=" row row-text">
             <div class="pointer-title">
                 <h1>latest news</h1>
@@ -150,11 +142,21 @@ p {
 .card {
     display: flex;
     flex-direction: column;
-    flex-basis: 33%;
+    flex-basis: calc((100% / 3) - 39px);
     flex-grow: 0;
     flex-shrink: 0;
     position: relative;
 }
+
+.col::-webkit-scrollbar {
+    height: 10px;
+}
+
+.row-card>.col::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: $orange-primary;
+}
+
 
 .event-info {
     padding-top: 40px;
