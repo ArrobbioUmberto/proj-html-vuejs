@@ -37,7 +37,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../style/partials/variables.scss' as *;
+@use '../../style/partials/variables.scss' as *;
 
 .header {
     height: 100px;

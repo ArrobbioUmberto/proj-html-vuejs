@@ -7,7 +7,7 @@ export default {
     <p>copyright everlead &copy; mikadoThemes </p>
 </template>
 <style lang="scss" scoped>
-@use '../style/partials/variables.scss' as *;
+@use '../../style/partials/variables.scss' as *;
 
 p {
     color: $white;

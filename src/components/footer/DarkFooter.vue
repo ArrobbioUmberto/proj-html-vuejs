@@ -71,7 +71,7 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-@use '../style/partials/variables.scss' as *;
+@use '../../style/partials/variables.scss' as *;
 
 .col {
     flex-basis: calc(100% / 4);
