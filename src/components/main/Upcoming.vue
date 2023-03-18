@@ -75,7 +75,7 @@ export default {
 .row {
     display: flex;
     flex-direction: column;
-    background-color: $white;
+    background-color: $text-invert;
     max-width: 700px;
 }
 
@@ -92,7 +92,7 @@ li {
     list-style-type: none;
     padding: 30px 200px 30px 40px;
     border-bottom: 1px solid $variant-black;
-    background-color: $grey-upcoming;
+    background-color: $upcoming;
 }
 
 li:first-child:hover {
@@ -100,7 +100,7 @@ li:first-child:hover {
 }
 
 li:hover {
-    background-color: $white-hover;
+    background-color: $hover;
     transform: scale(1.1);
 }
 
@@ -116,9 +116,9 @@ li:hover {
 }
 
 .date {
-    color: white;
+    color: $text-invert;
     padding: 10px;
-    background-color: $orange-primary;
+    background-color: $primary;
     text-align: center;
     font-family: $light-font;
     margin-top: 20px;
@@ -141,7 +141,7 @@ li:hover {
 }
 
 i {
-    color: $orange-primary;
+    color: $primary;
     margin-right: 5px;
 }
 

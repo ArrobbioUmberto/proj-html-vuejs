@@ -53,7 +53,7 @@ export default {
 @use '../../style/partials/variables.scss' as *;
 
 .container.circle {
-    background-color: $white;
+    background-color: $text-invert;
     position: relative;
     top: -150px;
 }
@@ -75,7 +75,7 @@ export default {
 }
 
 .point {
-    color: $orange-primary;
+    color: $primary;
     font-size: 6rem;
 }
 
@@ -113,7 +113,7 @@ h2 {
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 6%;
 }

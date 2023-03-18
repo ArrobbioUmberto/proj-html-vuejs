@@ -161,7 +161,7 @@ export default {
 }
 
 .point {
-    color: $orange-primary;
+    color: $primary;
     font-size: 3rem;
 }
 
@@ -179,7 +179,7 @@ h3 {
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 16%;
 }
@@ -231,7 +231,7 @@ input:focus {
 }
 
 .btn {
-    background-color: $orange-primary;
+    background-color: $primary;
     border: none;
     text-transform: uppercase;
     padding: 14px 10px;

@@ -83,12 +83,12 @@ export default {
 .left-arrow,
 .right-arrow {
     font-size: 2rem;
-    color: $white;
+    color: $text-invert;
     margin: 0 5px;
 }
 
 .arrow-box {
-    background-color: $orange-primary;
+    background-color: $primary;
     max-width: max-content;
     position: absolute;
     bottom: 4px;
@@ -114,14 +114,14 @@ export default {
     bottom: 0;
     left: 0;
     font-size: 30px;
-    background-color: $orange-primary;
+    background-color: $primary;
     padding: 10px 20px;
-    color: $white;
+    color: $text-invert;
     margin-bottom: 4px;
 }
 
 .col-text {
-    background-color: $white;
+    background-color: $text-invert;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,7 +131,7 @@ export default {
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 16%;
 }
@@ -178,8 +178,8 @@ h3 {
 }
 
 .custom-logo {
-    background-color: $orange-primary;
-    color: $white;
+    background-color: $primary;
+    color: $text-invert;
     aspect-ratio: 1/1;
     border-radius: 25px;
     padding: 5px;
@@ -191,6 +191,6 @@ h3 {
 }
 
 .immagine {
-    background-color: $black;
+    background-color: $normal-text;
 }
 </style>

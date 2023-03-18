@@ -25,8 +25,8 @@ export default {
             </div>
         </div>
         <!-- <div class="row_arrow">
-                        <span class="arrow-left">&LeftArrow;</span> <span class="arrow-right">&RightArrow;</span>
-                    </div> -->
+                                <span class="arrow-left">&LeftArrow;</span> <span class="arrow-right">&RightArrow;</span>
+                            </div> -->
     </div>
 </template>
 <style lang="scss" scoped>
@@ -43,7 +43,7 @@ export default {
 }
 
 .point {
-    color: $orange-primary;
+    color: $primary;
     font-size: 6rem;
     padding: 35px 0 0;
 }
@@ -112,6 +112,6 @@ span {
 
 button:hover {
     color: white;
-    background-color: $orange-primary;
+    background-color: $primary;
 }
 </style>

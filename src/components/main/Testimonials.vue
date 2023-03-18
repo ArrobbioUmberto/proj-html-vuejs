@@ -110,17 +110,17 @@ export default {
 }
 
 .card>img {
-    border: 4px solid $white;
+    border: 4px solid $text-invert;
     border-radius: 100%;
 }
 
 .name {
-    color: $white;
+    color: $text-invert;
     text-transform: capitalize;
 }
 
 .text {
-    color: $white;
+    color: $text-invert;
     font-weight: lighter;
     font-family: $light-font;
     font-size: 1.5rem;
@@ -139,19 +139,19 @@ export default {
 }
 
 .white-line {
-    background-color: $white;
+    background-color: $text-invert;
     height: 2px;
     width: 30px;
 }
 
 .grey-line {
-    background-color: $grey-line;
+    background-color: $line-static;
     height: 2px;
     width: 60px;
 }
 
 .page-number {
-    color: white;
+    color: $text-invert;
     font-family: $light-font;
     font-weight: lighter;
 }
@@ -159,7 +159,7 @@ export default {
 .left-arrow,
 .right-arrow {
     font-size: 2.5rem;
-    color: $white;
+    color: $text-invert;
 }
 
 .left-arrow {

@@ -108,7 +108,7 @@ export default {
 }
 
 .point {
-    color: $orange-primary;
+    color: $primary;
     font-size: 3rem;
 }
 
@@ -126,7 +126,7 @@ p {
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 6%;
 }
@@ -154,7 +154,7 @@ p {
 
 .row-card>.col::-webkit-scrollbar-thumb {
     border-radius: 25px;
-    background-color: $orange-primary;
+    background-color: $primary;
 }
 
 
@@ -178,11 +178,11 @@ h2 {
 }
 
 i {
-    color: $orange-primary;
+    color: $primary;
 }
 
 .btn-corner>i {
-    color: $white;
+    color: $text-invert;
     padding: 0 3px;
 }
 
@@ -198,12 +198,12 @@ i {
 }
 
 .btn-corner {
-    background-color: $orange-primary;
+    background-color: $primary;
     width: max-content;
     border: none;
     text-transform: capitalize;
     padding: 10px;
-    color: $white;
+    color: $text-invert;
     position: absolute;
     right: 5%;
     bottom: 40%;

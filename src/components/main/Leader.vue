@@ -81,12 +81,12 @@ export default {
 }
 
 .point {
-    color: $orange-primary;
+    color: $primary;
     font-size: 2.5rem;
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 9%;
     padding: 5px;
@@ -132,7 +132,7 @@ export default {
 
 .loader {
     display: inline-block;
-    background-color: $orange-primary;
+    background-color: $primary;
     height: 5px;
 }
 </style>

@@ -85,14 +85,14 @@ export default {
 
 p {
     margin: 0;
-    color: $white;
+    color: $text-invert;
     font-family: $light-font;
     font-weight: lighter;
     font-size: 15px;
 }
 
 .title {
-    color: $white;
+    color: $text-invert;
     font-size: 30px;
     font-weight: bold;
 }
@@ -102,7 +102,7 @@ p {
 }
 
 .fa-twitter {
-    color: $orange-primary;
+    color: $primary;
 }
 
 .list-wrap {
@@ -125,7 +125,7 @@ li {
 }
 
 .line {
-    border-bottom: 2px solid $orange-primary;
+    border-bottom: 2px solid $primary;
     display: inline-block;
     width: 10%;
 }
@@ -144,8 +144,8 @@ li {
 }
 
 .custom-logo {
-    background-color: $white;
-    color: $black;
+    background-color: $text-invert;
+    color: $normal-text;
     aspect-ratio: 1/1;
     border-radius: 25px;
     padding: 5px;
@@ -153,7 +153,7 @@ li {
 }
 
 .custom-logo:hover {
-    color: $orange-primary;
+    color: $primary;
     transform: scale(1.3);
 }
 
@@ -162,7 +162,7 @@ li {
 }
 
 a {
-    color: $white;
+    color: $text-invert;
     text-decoration: none;
 }
 
@@ -172,7 +172,7 @@ a {
 
 .important_links a {
     padding: 10px 0;
-    color: $white;
+    color: $text-invert;
     font-family: $light-font;
     font-weight: lighter;
     font-size: 15px;
@@ -187,7 +187,7 @@ a {
 }
 
 .contact {
-    color: $white;
+    color: $text-invert;
     font-family: $light-font;
     font-weight: lighter;
     margin: 10px 0;
@@ -198,21 +198,21 @@ a {
 }
 
 .contact i {
-    color: $orange-primary;
+    color: $primary;
     padding: 0 5px;
 }
 
 
 .btn {
     background-color: transparent;
-    color: $white;
+    color: $text-invert;
     border: none;
     text-transform: uppercase;
 }
 
 .form-part {
     background-color: transparent;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $text-invert;
     width: max-content;
 }
 
@@ -220,7 +220,7 @@ a {
     background-color: transparent;
     border: none;
     padding: 10px 0;
-    color: $white;
+    color: $text-invert;
 }
 
 input:focus {

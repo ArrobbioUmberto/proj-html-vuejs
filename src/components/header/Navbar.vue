@@ -63,7 +63,7 @@ a {
     text-transform: uppercase;
     margin: 5px 10px;
     font-weight: bold;
-    color: $black;
+    color: $normal-text;
     padding: 10px 0;
 }
 
@@ -79,7 +79,7 @@ li {
 }
 
 a:hover {
-    color: $orange-primary;
+    color: $primary;
     cursor: pointer;
 }
 </style>

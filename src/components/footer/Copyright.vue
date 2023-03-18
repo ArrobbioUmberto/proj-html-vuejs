@@ -10,7 +10,7 @@ export default {
 @use '../../style/partials/variables.scss' as *;
 
 p {
-    color: $white;
+    color: $text-invert;
     font-size: 15px;
     font-weight: lighter;
     text-align: center;
